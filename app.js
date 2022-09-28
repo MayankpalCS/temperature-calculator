@@ -8,7 +8,7 @@ app.get("/",function(req,res){
 })
 app.post("/temp",function(req,res){
   city=req.body.city
-  api='0aa0e3ffe4df4d6ecec3eabec2abeca7'
+  api='your api key'
   url='https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+api
   https.get(url,function(response){
     status=response.statusCode
